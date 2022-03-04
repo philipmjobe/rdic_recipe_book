@@ -41,5 +41,13 @@ class RecipesController < ApplicationController
       render json: {errors: recipe.errors.full_messages},
       status: 422
     end 
+  end
+  
+  def destroy
+    recipe_id = params["id"]
+    recipe = Recipe.find_by(id: recipe_id)
+
+    recipe.destroy
+    render json: {message: "Recipe Deleted"}
   end 
 end
