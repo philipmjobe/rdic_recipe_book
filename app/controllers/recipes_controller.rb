@@ -15,7 +15,7 @@ class RecipesController < ApplicationController
       name: params["name"],
       contributor: params["contributor"],
       ingredients: params["ingredients"],
-      directions: params[:directions]
+      directions: params["directions"]
     )
 
     if recipe.save
