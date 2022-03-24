@@ -1,2 +1,14 @@
 ### RECIPES SHOW
 GET http://localhost:3000/recipes/22.json 
+
+### RECIPE CREATE
+POST http://localhost:3000/recipes 
+Content-Type: application/json
+
+{
+  "name": "Sesame Chicken",
+  "contributor": "Amber Dumas",
+  "ingredients": "1 Tbsp sesame oil, 1 1/2lbs. skinless boneless chicken breast or tenders thinly sliced into smaller strips, 2 Tbsp minced fresh ginger, 3 fresh garlic cloves - minced, 1 tsp chili flakes or to taste, 1lb. fresh green beans - trimmed and halved, 2-3 Tbsp reduced sodium soy sauce or coconut aminos or Bragg's liquid aminos, Juice of 1 fresh squeezed orange, 2-3 Tbsp toasted sesame seeds",
+  "directions": "Heat oil in a large wok or skillet over medium-high heat. Add in your chicken pieces in a single layer and cook without stirring for 2 minutes or until browned on one side. Stir in your fresh ginger and chili flakes, then cook for 2 minutes more, or just until chicken is cooked through. Add in green beans and bell pepper, stir fry for another 3 minutes or just untiil crisp-tender. Drizzle with soy sauce/coconut aminos orange juice and simmer for 1 more minute. Taste test and adjust to your liking. Sprinkle with sesame seeds",
+  "category": "Dinner"
+}

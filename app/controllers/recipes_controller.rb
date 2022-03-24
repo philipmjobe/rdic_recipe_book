@@ -15,7 +15,8 @@ class RecipesController < ApplicationController
       name: params["name"],
       contributor: params["contributor"],
       ingredients: params["ingredients"],
-      directions: params["directions"]
+      directions: params["directions"],
+      category: params["category"]
     )
 
     if recipe.save
@@ -34,6 +35,7 @@ class RecipesController < ApplicationController
     recipe.contributor = params["contributor"] || recipe.contributor
     recipe.ingredients = params["ingredients"] || recipe.ingredients
     recipe.directions = params["directions"] || recipe.directions
+    recipe.category = params["category"] || recipe.category
 
     if recipe.save
       render json: recipe
