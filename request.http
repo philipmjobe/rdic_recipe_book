@@ -12,3 +12,11 @@ Content-Type: application/json
   "directions": "Heat oil in a large wok or skillet over medium-high heat. Add in your chicken pieces in a single layer and cook without stirring for 2 minutes or until browned on one side. Stir in your fresh ginger and chili flakes, then cook for 2 minutes more, or just until chicken is cooked through. Add in green beans and bell pepper, stir fry for another 3 minutes or just untiil crisp-tender. Drizzle with soy sauce/coconut aminos orange juice and simmer for 1 more minute. Taste test and adjust to your liking. Sprinkle with sesame seeds",
   "category": "Dinner"
 }
+
+### RECIPE UPDATE
+PATCH http://localhost:3000/recipes/173
+Content-Type: application/json
+
+{
+  "notes": "A quick and easy dinner"
+}
