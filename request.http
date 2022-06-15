@@ -20,3 +20,6 @@ Content-Type: application/json
 {
   "notes": "A quick and easy dinner"
 }
+
+### NOTES SHOW
+GET http://localhost:3000/recipes/279
