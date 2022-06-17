@@ -9,7 +9,4 @@ class Recipe < ApplicationRecord
     directions.split(". ")
   end
 
-  def recipe_notes
-    recipe_notes = notes.all
-  end 
 end
