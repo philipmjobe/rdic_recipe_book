@@ -14,12 +14,9 @@ Content-Type: application/json
 }
 
 ### RECIPE UPDATE
-PATCH http://localhost:3000/recipes/173
+PATCH http://localhost:3000/recipes/279
 Content-Type: application/json
 
 {
-  "notes": "A quick and easy dinner"
+  "notes": "Brownies from Amanda"
 }
-
-### NOTES SHOW
-GET http://localhost:3000/recipes/279

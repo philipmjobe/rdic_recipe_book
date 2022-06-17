@@ -1,6 +1,5 @@
 class Recipe < ApplicationRecord
   validates :name, presence: true
-  has_many :notes 
 
   def ingredients_list
     ingredients.split(", ")
@@ -9,4 +8,8 @@ class Recipe < ApplicationRecord
   def directions_list
     directions.split(". ")
   end
+
+  def recipe_notes
+    recipe_notes = notes.all
+  end 
 end
