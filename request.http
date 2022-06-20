@@ -20,3 +20,11 @@ Content-Type: application/json
 {
   "notes": "Brownies from Amanda"
 }
+
+### NOTES INDEX ###
+GET http://localhost:3000/notes/279
+Content-Type: application/json
+
+### NOTES SHOW ###  
+GET http://localhost:3000/notes/recipes/279
+Content-Type: application/json

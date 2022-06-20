@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   patch "/recipes/:id" => "recipes#update"
   delete "/recipes/:id" => "recipes#destroy"
 
-  get "/notes/:id" => "notes#show"
+  get "/notes" => "notes#index"
+  get "/notes/recipes/:id" => "notes#show"
 end
