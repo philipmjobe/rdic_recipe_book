@@ -1,5 +1,5 @@
 class Recipe < ApplicationRecord
-  has_many :notes
+  has_many :notes, through: :recipes
   validates :name, presence: true
 
   def ingredients_list

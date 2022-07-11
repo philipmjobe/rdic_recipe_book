@@ -1,5 +1,5 @@
 ### RECIPES SHOW
-GET http://localhost:3000/recipes/22.json 
+GET http://localhost:3000/recipes/279.json 
 
 ### RECIPE CREATE
 POST http://localhost:3000/recipes 
@@ -13,18 +13,15 @@ Content-Type: application/json
   "category": "Dinner"
 }
 
-### RECIPE UPDATE
-PATCH http://localhost:3000/recipes/279
+### NOTE CREATE
+POST http://localhost:3000/notes
 Content-Type: application/json
 
 {
-  "notes": "Brownies from Amanda"
+  "recipe_id": 279,
+  "notes": "Just awesome brownies"
 }
 
-### NOTES INDEX ###
+### NOTE SHOW
 GET http://localhost:3000/notes/279
-Content-Type: application/json
-
-### NOTES SHOW ###  
-GET http://localhost:3000/notes/recipes/279
 Content-Type: application/json

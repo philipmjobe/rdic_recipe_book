@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   delete "/recipes/:id" => "recipes#destroy"
 
   get "/notes" => "notes#index"
-  get "/notes/recipes/:id" => "notes#show"
+  get "/notes/:id" => "notes#show"
+  post "/notes" => "notes#create"
 end
