@@ -6,6 +6,5 @@ class RecipeSerializer < ActiveModel::Serializer
              :contributor, 
              :category, 
              :ingredients_list, 
-             :directions_list, 
-             :notes
+             :directions_list
 end
