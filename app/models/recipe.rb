@@ -1,6 +1,6 @@
 class Recipe < ApplicationRecord
   has_many :notes
-  validates :name, presence: true
+  validates :name, :ingredients, :directions presence: true
 
   def ingredients_list
     ingredients.split(", ")

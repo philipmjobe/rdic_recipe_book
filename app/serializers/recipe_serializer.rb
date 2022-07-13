@@ -7,4 +7,5 @@ class RecipeSerializer < ActiveModel::Serializer
              :category, 
              :ingredients_list, 
              :directions_list
+  has_many :notes
 end
