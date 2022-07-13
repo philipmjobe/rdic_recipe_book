@@ -19,7 +19,7 @@ Content-Type: application/json
 
 {
   "recipe_id": 279,
-  "notes": "Just awesome brownies"
+  "note": "Just awesome brownies"
 }
 
 ### NOTE SHOW
