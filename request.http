@@ -1,5 +1,5 @@
 ### RECIPES SHOW
-GET http://localhost:3000/recipes/279.json 
+GET http://localhost:3000/recipes/268.json 
 
 ### RECIPE CREATE
 POST http://localhost:3000/recipes 
@@ -18,7 +18,7 @@ POST http://localhost:3000/notes
 Content-Type: application/json
 
 {
-  "recipe_id": 279,
+  "recipe_id": 268,
   "note": "Just awesome brownies"
 }
 
